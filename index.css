@@ -16,5 +16,13 @@ body {
   width: 100vw;
 }
 
-.button { font-size: 2em; padding: .5em 1.5em; }
-.output { font-size: 4em; padding: 1em; }
+.button { font-size: 2rem; padding: .5rem 1.5rem; }
+.output { font-size: 4rem; padding: 1rem; }
+.ribbon {
+  background: url('https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png') center/cover;
+  height: 8rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8rem;
+}
