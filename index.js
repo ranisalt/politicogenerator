@@ -1,59 +1,33 @@
 (() => {
   const parts = [
     [
-      'bandidinho',
-      'cadela no cio',
-      'chefe de quadrilha',
-      'conspirador',
-      'golpista',
-      'jumento de carga',
-      'maior bandido',
-      'na sua vaidade de',
-      'playboy',
-      'projetinho de',
-      'protoneoliberalzinho',
-      'salafrário',
+      'vamos aumentar ',
+      'vamos congelar os preços d',
+      'vamos diminuir ',
+      'vamos estimular ',
+      'vamos garantir ',
+      'vamos interditar ',
+      'vamos investir n',
+      'vamos obrigar ',
+      'vamos proibir ',
+      'vamos regular ',
+      'vamos taxar ',
     ], [
-      'abestado',
-      'abirobado',
-      'amalucado',
-      'apartidário',
-      'bobão',
-      'boçal',
-      'capitãozinho do mato',
-      'chefe de milícia',
-      'cheirador de cocaína',
-      'covarde',
-      'delinquente juvenil',
-      'despreparado',
-      'farsante',
-      'fascistoide',
-      'filho da puta',
-      'fisiológico',
-      'frouxo',
-      'fuxiqueiro',
-      'idiota',
-      'imbecil',
-      'infeliz',
-      'liberaloide',
-      'marginal',
-      'mentiroso',
-      'oportunista',
-      'picareta',
-      'protofascistinha',
-      'quadrilheiro',
-      'safado',
-      'selvagem',
-      'vil e pusilânime',
+      'a iluminação de espaços públicos',
+      'a venda de bebidas alcoólicas',
+      'as igrejas',
+      'o acesso às praias',
+      'o consumo de bebidas alcoólicas',
+      'o uso de aplicativos de carona compartilhada',
+      'o uso de CPF nas redes sociais',
+      'os juros do cartão de crédito',
+      'os planos de saúde',
     ], [
-      'cheio de areia no cu',
-      'com 526 terabytes de encryption',
-      'da turma do Romero Jucá',
-      'de merda',
-      'desgraçado',
-      'dos grandes',
-      'dos infernos',
-      'eleitoreiro',
+      'para artistas de praia da cidade',
+      'para coibir as fake news',
+      'para combater aglomerações',
+      'para instituições de ensino superior',
+      'para servidores públicos ativos, inativos e pensionistas',
     ],
   ]
 
@@ -62,9 +36,8 @@
       output = document.querySelector('.output')
 
     const generateNew = () => {
-      output.innerText = parts.map(
-        part => part[Math.floor(Math.random() * part.length)]
-      ).join(' ')
+      const picked = parts.map(p => p[Math.floor(Math.random() * p.length)])
+      output.innerText = `${picked[0]}${picked[1]} ${picked[2]}`
     }
 
     button.addEventListener('click', ev => {
